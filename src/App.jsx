@@ -18,7 +18,7 @@ import ProductsScreen from "../src/components/ProductScreen/ProductsScreen.jsx";
 import Collaborations from "./components/CollaborationScreen/Collaborations";
 import BlogScreen from "./components/BlogScreen/BlogScreen";
 import ContactScreen from "./components/ContactScreen/ContactScreen";
-import Footer from "./components/HomeScreen/Footer/footer";
+import Footer from "./components/HomeScreen/Footer/Footer";
 import BlogDetail from "./components/BlogScreen/BlogDetail";
 import { toast,ToastContainer } from "react-toastify";
 
