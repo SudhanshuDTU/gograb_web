@@ -1,0 +1,54 @@
+.empowering-campuses {
+  text-align: center;
+  padding: 50px 20px;
+  background-color: #f8f9fa;
+}
+
+.empowering-campuses h2 {
+  font-size: 28px;
+  color: #007bff;
+  margin-bottom: 40px;
+}
+
+.college-images {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.college-images img {
+  width: 150px; /* Set a fixed width for each image */
+  height: 150px; /* Set a fixed height for each image */
+  object-fit: contain; /* Ensure the image fits within the specified dimensions */
+  border-radius: 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+/* Adjust the grid layout for specific rows */
+.college-images img:nth-child(6) {
+  grid-column: 1;
+}
+
+.college-images img:nth-child(11) {
+  grid-column: 1;
+}
+
+.college-images img:nth-child(15) {
+  grid-column: 2;
+}
+
+@media (max-width: 768px) {
+  .college-images {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .college-images img:nth-child(6),
+  .college-images img:nth-child(11),
+  .college-images img:nth-child(15) {
+    grid-column: auto;
+  }
+}

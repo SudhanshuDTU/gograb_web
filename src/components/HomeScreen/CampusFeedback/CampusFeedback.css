@@ -1,0 +1,78 @@
+.campus-feedback {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .campus-feedback h2 {
+    font-size: 36px;
+    color: #007bff;
+    margin-bottom: 10px;
+  }
+  
+  .campus-feedback .subtitle {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 40px;
+  }
+  
+  .feedback-cards {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+  
+  .feedback-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 300px;
+  }
+  
+  .feedback-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+    font-style: italic;
+  }
+  
+  .feedback-author {
+    display: flex;
+    align-items: center;
+  }
+  
+  .feedback-author img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+  
+  .author-info {
+    text-align: left;
+  }
+  
+  .author-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .author-designation {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .feedback-cards {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  

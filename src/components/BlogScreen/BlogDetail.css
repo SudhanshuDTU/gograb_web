@@ -1,0 +1,85 @@
+.blog-detail {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .blog-detail h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .blog-detail em {
+    display: block;
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 20px;
+  }
+  
+  .blog-detail img {
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    object-fit: cover;
+  }
+  
+  .blog-content {
+    line-height: 1.7;
+    font-size: 1.05rem;
+    color: #444;
+    white-space: pre-wrap; /* preserves formatting and line breaks */
+  }
+  
+  .blog-detail p {
+    margin-bottom: 1.2rem;
+  }
+  
+  /* Loading and error states */
+  .blog-detail-loading,
+  .blog-detail-error {
+    text-align: center;
+    padding: 50px 20px;
+    font-size: 1.2rem;
+    color: #666;
+  }
+  
+  /* Responsive tweaks */
+  @media screen and (max-width: 768px) {
+    .blog-detail {
+      padding: 16px;
+      margin: 20px auto;
+    }
+  
+    .blog-detail h1 {
+      font-size: 2rem;
+    }
+  
+    .blog-content {
+      font-size: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .blog-detail {
+      padding: 12px;
+    }
+  
+    .blog-detail h1 {
+      font-size: 1.6rem;
+    }
+  
+    .blog-content {
+      font-size: 0.95rem;
+    }
+  
+    .blog-detail em {
+      font-size: 0.8rem;
+    }
+  }
+  
