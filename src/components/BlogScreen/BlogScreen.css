@@ -22,7 +22,7 @@
   
   .blog-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     margin-bottom: 40px;
   }
@@ -31,7 +31,7 @@
     margin-left: auto;
     margin-right: auto;
     background: white;
-    max-height: 500px;
+    height: 100%;
     padding: 5px;
     border-radius: 8px;
     overflow: hidden;
@@ -46,8 +46,9 @@
   
   .blog-image-container {
     position: relative;
-    height: 200px;
-    overflow: hidden;
+    height: 220px;
+    width: 100%;
+    overflow: visible;
   }
   
   .blog-image {
@@ -73,6 +74,9 @@
   }
   
   .blog-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
     padding: 20px;
   }
   
@@ -80,19 +84,33 @@
     font-size: 1.3rem;
     margin-bottom: 10px;
     color: #333;
+    overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 2 lines */
+  -webkit-box-orient: vertical;
+    
   }
   
   .blog-excerpt {
     color: #666;
     line-height: 1.6;
     margin-bottom: 15px;
+    flex-grow: 1; /* Pushes footer to bottom */
+  min-height: 4.8rem; /* Fixed height for 3 lines */
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
   }
   
   .blog-footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 15px;
+    justify-content: flex-start;
+   
+   
+    
+  margin-top: auto; /* Pushes footer to bottom */
+  padding-top: 15px;
   }
   
   .blog-author {
@@ -105,10 +123,18 @@
     text-decoration: none;
     font-weight: 500;
     transition: color 0.3s;
+    padding: 0; /* Remove padding */
+    background: none; /* Remove background */
+    border: none; /* Remove border */
+    box-shadow: none; /* Remove shadow */
+    text-align: left; /* Left align */
+    cursor: pointer;
+    font-size: 0.9rem;
   }
   
   .read-more:hover {
     color: #0056b3;
+    text-decoration: underline;
   }
   
   .pagination {
@@ -217,6 +243,15 @@
     flex: 1;
     padding-right: 40px;
   }
+  .contact-header h1{
+    text-align: left;
+    padding-left: 20px;
+  }
+  .contact-header p{
+    text-align: left;
+    padding-left: 20px;
+    font-size: medium;
+  }
   .contact-image-container {
     flex: 1;
     display: flex;
@@ -224,7 +259,7 @@
     align-items: center;
   }
   .contact-image {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     border-radius: 8px; /* Optional: slight border-radius for the image */
   }
@@ -282,6 +317,14 @@
     
     .blog-header h1 {
       font-size: 2rem;
+    }
+    .blog-title {
+      min-height: auto;
+      -webkit-line-clamp: 3;
+    }
+    .blog-excerpt {
+      min-height: auto;
+      -webkit-line-clamp: 4;
     }
     
     .pagination {

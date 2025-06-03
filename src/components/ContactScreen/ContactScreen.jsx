@@ -80,8 +80,8 @@ const ContactScreen = () => {
         </div>
       </div>
 
+      <h2 style={{fontSize: 'xx-large'}}>Leave us a message</h2>
       <div className="contact-form-section">
-        {" "}
         {/* Added a new div for the form section */}
         {isSubmitted ? (
           <div className="success-message">
@@ -89,7 +89,7 @@ const ContactScreen = () => {
           </div>
         ) : (
           <form onSubmit={handleSubmit} className="contact-form">
-            <h2>Leave us a message</h2>
+           
 
             <div className="form-group">
               <label htmlFor="name">Name</label>

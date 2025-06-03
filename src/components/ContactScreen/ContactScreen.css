@@ -6,6 +6,8 @@
   padding: 10px;
   width: '100%';
   margin: 0 auto;
+
+  margin-bottom: 10%;
 }
 
 .contact-hero-section {
@@ -49,7 +51,7 @@
 }
 
 .contact-image {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   border-radius: 8px; /* Optional: slight border-radius for the image */
 }
@@ -67,6 +69,7 @@
   padding: 40px;
   width: 100%;
   max-width: 600px;
+  text-align: left;
 }
 
 .contact-form h2 {
@@ -78,6 +81,7 @@
 
 .form-group {
   margin-bottom: 25px;
+  text-align: left;
 }
 
 .form-group label {
@@ -177,6 +181,7 @@
 
   .contact-header p {
     font-size: 1em;
+    
   }
 
   .contact-form {

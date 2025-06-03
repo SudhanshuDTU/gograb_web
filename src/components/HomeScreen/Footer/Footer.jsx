@@ -44,8 +44,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-content">
         <div className="footer-section">
-          <h3>Contact</h3>
-          <p>team@go-grab.in</p>
+          <h3 className='centerINMob'>Contact</h3>
+          <p className='centerINMob'>team@go-grab.in</p>
           <div className="social-icons">
             <a href="https://www.instagram.com/gograb_india/" target="_blank" rel="noopener noreferrer">
               <img src="https://img.freepik.com/premium-psd/instagram-logo_971166-164497.jpg?semt=ais_hybrid&w=740" alt="Instagram" />
@@ -53,23 +53,23 @@ const Footer = () => {
           </div>
         </div>
         <div className="footer-section">
-          <h3>Index</h3>
+          <h3 className='centerINMob'>Index</h3>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/products">Products</a></li>
-            <li><a href="/collaborations">Collaborations</a></li>
-            <li><a href="/contact">Contact</a></li>
+            <li className='centerINMob'><a href="/" >Home</a></li>
+            <li className='centerINMob'><a href="/products" >Products</a></li>
+            <li className='centerINMob'><a href="/collaborations">Collaborations</a></li>
+            <li className='centerINMob'><a href="/contact" >Contact</a></li>
           </ul>
         </div>
         <div className="footer-section">
-          <h3>Blogs</h3>
+          <h3 className='footer-blogs'>Blogs</h3>
           <ul>
             {loading && <li>Loading blogs...</li>}
             {error && <li>{error}</li>}
             {!loading && !error && blogs.map((blog) => (
                 
-              <li key={blog.$id}>
-               <p onClick={()=> handleRoute(blog.$createdAt)}>{blog.title}</p>
+              <li key={blog.$id} >
+               <p onClick={()=> handleRoute(blog.$createdAt)} >{blog.title}</p>
                 {/* <Link to={`/blog/${blog.$createdAt}`}>{blog.title}</Link> */}
               </li>
             ))}

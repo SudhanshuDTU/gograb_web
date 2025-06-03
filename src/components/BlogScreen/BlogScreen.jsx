@@ -105,7 +105,7 @@ const handleBlogClick = (id) => {
         <div className="contact-header">
           <h1>Go-Grab Insights & <span className="highlight-text">Ideas</span> </h1>
           <p>Discover how we’re transforming vending across campuses with innovation, real stories, and smart product thinking.</p>
-         
+                  
         </div>
         <div className="contact-image-container">
           <img src={blogImage} alt="Contact" className="contact-image" />
@@ -136,12 +136,13 @@ const handleBlogClick = (id) => {
               </div>
             </div>
             <div className="blog-content">
+            <span className="blog-author">By {blog.author || 'Admin'}</span>
               <h2 className="blog-title">{blog.title}</h2>
               <p className="blog-excerpt">
                 {blog.content.substring(0, 150) + '...'}
               </p>
               <div className="blog-footer">
-                <span className="blog-author">By {blog.author || 'Admin'}</span>
+                
                 <button onClick={() => handleBlogClick(blog.$createdAt)} className="read-more">
                   Read More →
                 </button>

@@ -10,10 +10,7 @@ const TrustedByUsers = () => {
         on-demand access to snacks and beverages.
       </p>
       <div className="stats">
-        <div className="stat">
-          <p className="stat-number">150+</p>
-          <p className="stat-label">Machines Installed</p>
-        </div>
+       
         <div className="stat">
           <p className="stat-number">100K+</p>
           <p className="stat-label">Happy Customers</p>

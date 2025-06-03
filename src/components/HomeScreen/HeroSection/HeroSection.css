@@ -2,12 +2,15 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 50px;
+    padding: 0 50px;
+    height: 90vh;
     max-width: 100%;
     margin: 0 auto;
     background-color: #F4F1E7;
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
+    box-sizing: border-box;
+    overflow: visible;
   }
   
   .hero-content {
@@ -16,22 +19,23 @@
   }
   
   .hero-content h1 {
-    font-size: 60px;
+    font-size: 48px;
+    text-align: left;
     margin-bottom: 20px;
   }
   
   .highlight {
     color: #007bff;
   }
-  
-  .hero-content p {
-    font-size: 30px;
-    margin-bottom: 20px;
+  .description {
+    font-size: 14px;
+    color: #666;
   }
   
-  .description {
-    font-size: 16px;
-    color: #666;
+  .hero-content p {
+    font-size: 26px;
+    margin-bottom: 18px;
+    text-align: left;
   }
   
   .buttons {
@@ -40,9 +44,9 @@
   }
   
   .buy-button, .partner-button2 {
-    padding: 10px 20px;
+    padding: 10px 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 10px;
     cursor: pointer;
     font-size: 16px;
   }
@@ -63,28 +67,57 @@
   }
   
   .hero-image img {
+    margin-top: 200px;
     width: 100%;
-    height: auto;
+    height: 80vh;
+    object-fit: contain;
   }
   
   @media (max-width: 768px) {
     .hero-section {
       flex-direction: column;
       padding: 20px;
+      height: 94vh;
+      overflow: visible;
     }
   
     .hero-content {
-      padding-right: 0;
+      padding: 0;
       margin-bottom: 30px;
     }
   
     .hero-content h1 {
-      font-size: 36px;
+      font-size: 34px;
     }
+    .hero-content p {
+      font-size: 24px;
+    }
+    .hero-content .description {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+  
     .buttons {
-      display: flex;
-      gap: 20px;
-      justify-content: center;
+      flex-direction: column;
+      gap: 15px;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 20px;
+      
+    }
+    .buy-button, .partner-button2 {
+      padding: 11px 20px;
+      
+      font-size: medium;
+      width: 100%;
+      max-width: 180px;
+    }
+    
+    .hero-image img {
+      width: 100%;
+      margin-top: -30px;
+      max-height: 40vh;
+      object-fit: contain;
     }
   }
   

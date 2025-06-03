@@ -22,7 +22,7 @@
 .college-images img {
   width: 150px; /* Set a fixed width for each image */
   height: 150px; /* Set a fixed height for each image */
-  object-fit: contain; /* Ensure the image fits within the specified dimensions */
+  object-fit: scale-down; /* Ensure the image fits within the specified dimensions */
   border-radius: 0;
   box-shadow: none;
   background-color: transparent;
@@ -37,7 +37,7 @@
   grid-column: 1;
 }
 
-.college-images img:nth-child(15) {
+.college-images img:nth-child(12) {
   grid-column: 2;
 }
 

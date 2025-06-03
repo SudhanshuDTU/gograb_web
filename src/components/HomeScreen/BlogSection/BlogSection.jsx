@@ -69,9 +69,12 @@ const BlogSection = () => {
             <p className="blog-description">
               {blog.content.substring(0, 100)}... {/* Truncate content to fit 2 lines, adjust as needed */}
             </p>
-            <button className="read-more-button" onClick={() => handleReadMore(blog.$createdAt)}>
-              Read More
+            <div className='read-more-footer'>
+            <button  onClick={() => handleReadMore(blog.$createdAt)} className="read-more-button">
+              Read More →
             </button>
+
+            </div>
           </div>
         ))}
       </div>

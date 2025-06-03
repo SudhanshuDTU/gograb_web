@@ -18,7 +18,7 @@ import ProductsScreen from "../src/components/ProductScreen/ProductsScreen.jsx";
 import Collaborations from "./components/CollaborationScreen/Collaborations";
 import BlogScreen from "./components/BlogScreen/BlogScreen";
 import ContactScreen from "./components/ContactScreen/ContactScreen";
-import Footer from "./components/HomeScreen/Footer/footer";
+import Footer from "./components/HomeScreen/Footer/Footer";
 import BlogDetail from "./components/BlogScreen/BlogDetail";
 import { toast,ToastContainer } from "react-toastify";
 
@@ -73,7 +73,7 @@ function App() {
               </li>
             </ul>
             <div className="partner-button">
-              <a href="/partner" className="button">
+              <a onClick={() => toast("Coming Soon ..")} className="button">
                 Partner With Us
               </a>
             </div>
@@ -86,7 +86,7 @@ function App() {
         <Route
           path="/"
           element={
-            <>
+            <> 
               <HeroSection />
               <HowItWorks />
               <TrustedByUsers />
@@ -96,7 +96,7 @@ function App() {
               <BlogSection />
               <FAQSection />
               <FooterBanner />
-              <Footer />
+              
             </>
           }
         />
@@ -106,6 +106,9 @@ function App() {
         <Route path="/blog/:id" element={<BlogDetail />} />
         <Route path="/contact" element={<ContactScreen />} />
       </Routes>
+      <footer>
+      <Footer />
+      </footer>
     </div>
   );
 }

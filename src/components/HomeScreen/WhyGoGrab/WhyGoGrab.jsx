@@ -13,7 +13,7 @@ const WhyGoGrab = () => {
       <div className="features">
         <div className="feature">
           <img src={image1} alt="AI-Smart, Always Stocked" />
-          <p style={{ color: "#0F78E4" }}>AI-Smart, Always Stocked</p>
+          <p style={{ color: "#0F78E4" }} className="pHeading">AI-Smart, Always Stocked</p>
           <p className="description">
             Predictive analytics keep shelves full, so users always find their
             favorite snack.
@@ -21,14 +21,14 @@ const WhyGoGrab = () => {
         </div>
         <div className="feature">
           <img src={image2} alt="Personalized for Your Space" />
-          <p style={{ color: "#0F78E4" }}>Personalized for Your Space</p>
+          <p style={{ color: "#0F78E4" }} className="pHeading">Personalized for Your Space</p>
           <p className="description">
             Product mix and features tailored to your unique crowd.
           </p>
         </div>
         <div className="feature">
           <img src={image3} alt="Chosen by India’s Elite" />
-          <p style={{ color: "#0F78E4" }}>Chosen by India’s Elite</p>
+          <p style={{ color: "#0F78E4" }} className="pHeading">Chosen by India’s Elite</p>
           <p className="description">
             Trusted by IITs, IIMs, NITs — plus other premier campuses of
             excellence.

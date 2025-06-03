@@ -1,4 +1,5 @@
 .footer-banner {
+  position: relative;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -9,27 +10,46 @@
     color: white;
     text-align: center;
     padding: 20px;
+    overflow: hidden;
+    
   }
   
+.footer-banner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black overlay with 50% opacity */
+  z-index: 1;
+}
   .banner-content {
     max-width: 800px;
     margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    justify-content: space-between; /* Align items with space between */
+  flex-wrap: wrap; 
   }
   
   .footer-banner h2 {
     font-size: 36px;
     margin-bottom: 20px;
+    position: relative;
   }
   
   .footer-banner p {
     font-size: 18px;
     margin-bottom: 30px;
+    position: relative;
   }
   
   .banner-buttons {
     display: flex;
     justify-content: center;
     gap: 20px;
+    position: relative;
   }
   
   .collab-button, .learn-more-button {
@@ -38,6 +58,7 @@
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
+    position: relative;
   }
   
   .collab-button {
